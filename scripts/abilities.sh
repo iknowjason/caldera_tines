@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Fill in your Caldera server
-export CALDERA_SERVER=""
+#export CALDERA_SERVER=""
 
 # Fill in your Caldera api key
-export CALDERA_API=""
+#export CALDERA_API=""
 
 # Test the abilities API endpoint
 echo "[+] Test the abilities endpoint"
