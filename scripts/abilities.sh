@@ -23,7 +23,7 @@ echo "Paw ID for Windows host: $PAW_ID"
 export ABILITY_1="1afaec09315ab71fdfb167175e8a019a"
 
 # Execute Ability #1
-curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
+curl -s -w"\n" -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
   -H 'accept: application/json' -H "KEY:$CALDERA_API" -H POST \
   -d "{\"paw\":\"$PAW_ID\",\"ability_id\":\"$ABILITY_1\",\"obfuscator\":\"plain-text\"}"
 
@@ -31,7 +31,7 @@ curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
 export ABILITY_2="42473624-a7fb-441a-ba9d-6cd1c683829c"
 
 # Execute Ability #2
-curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
+curl -s -w"\n" -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
   -H 'accept: application/json' -H "KEY:$CALDERA_API" -H POST \
   -d "{\"paw\":\"$PAW_ID\",\"ability_id\":\"$ABILITY_2\",\"obfuscator\":\"plain-text\"}"
 
@@ -39,7 +39,7 @@ curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
 export ABILITY_3="5b25ae2e-b2db-4186-bb94-ddac2ef4fd70"
 
 # Execute Ability #3
-curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
+curl -s -w"\n" -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
   -H 'accept: application/json' -H "KEY:$CALDERA_API" -H POST \
   -d "{\"paw\":\"$PAW_ID\",\"ability_id\":\"$ABILITY_3\",\"obfuscator\":\"plain-text\"}"
 
@@ -47,6 +47,6 @@ curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
 export ABILITY_4="5251e73e-a251-4386-a050-fa97f56ee1b9"
 
 # Execute Ability #4
-curl -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
+curl -s -w"\n" -k http://$CALDERA_SERVER:8888/plugin/access/exploit \
   -H 'accept: application/json' -H "KEY:$CALDERA_API" -H POST \
   -d "{\"paw\":\"$PAW_ID\",\"ability_id\":\"$ABILITY_4\",\"obfuscator\":\"plain-text\"}"
